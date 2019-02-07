@@ -1,6 +1,7 @@
 version: '3'
 services:
-  ide: torinasakura/cloud9
+  ide: 
+    image: torinasakura/cloud9
     volumes:
       - ./:/workspace
     ports:
