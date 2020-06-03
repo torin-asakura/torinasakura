@@ -1,0 +1,7 @@
+.terraform
+*.tfstate
+
+# certs
+cert.key
+cert.crt
+issuer.pem
