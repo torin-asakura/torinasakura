@@ -1,6 +1,24 @@
 {
-  "devDependencies": {
-    "lerna": "^3.10.7"
+  "scripts": {
+    "lint": "mctl lint",
+    "test": "mctl test",
+    "commit": "mctl commit",
+    "format": "mctl format",
+    "typecheck": "mctl typecheck",
+    "checkcommit": "mctl precommit"
   },
-  "name": "workspace"
+  "devDependencies": {
+    "@monstrs/mctl": "^0.1.82",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.0",
+    "typescript": "^3.9.3"
+  },
+  "workspaces": [
+    "frontend/**/*"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "mctl commitmsg"
+    }
+  }
 }
